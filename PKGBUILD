@@ -7,17 +7,16 @@ arch=('x86_64' 'aarch64')
 url="https://source.mnt.re/reform/reform-tools"
 license=('GPL3')
 
+
 depends=(
   'python'
   'python-psutil'
-  'rsync'
-  'alsa-utils'
-  'systemd'
-  'procps-ng'
-  'busybox'
-  'help2man'
+  'i2c-tools'
 )
 optdepends=(
+  'mtd-utils: for NAND flashing tools'
+  'alsa-utils: for audio-related tools'
+  'lm_sensors: for sensor monitoring'
   'ircii: for Reform chat/IRC tools'
   'pavucontrol: GUI mixer control (if using PulseAudio)'
 )
